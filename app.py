@@ -103,7 +103,7 @@ elif page == "ℹ️ About":
 
     st.subheader("📖 Pages")
     st.write("**✉️ Email Checker** — Paste an email and get an instant spam prediction with confidence score.")
-    st.write("**📂 Batch Prediction** — Upload a CSV dataset to predict multiple emails at once. You can also upload the true labels to compare with the model predictions.")
+    st.write("**- 📂 **Batch Prediction** — Upload a CSV dataset (must contain only the 3000 word columns with their counts, no extra columns) to predict multiple emails at once and compare with true labels")
     st.write("**📊 Dataset Statistics** — Explore the training dataset with visualizations : spam distribution and top words in spam and not spam emails.")
     st.write("**ℹ️ About** — You are here ! General information about the app, the dataset, the model and downloads.")
 
