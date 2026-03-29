@@ -136,8 +136,8 @@ elif page == "ℹ️ About":
     st.subheader("📥 Downloads")
     col1, col2, col3,col4 = st.columns(4)
     with col1:
-        with open("emails.csv", "rb") as f:
-            st.download_button("⬇️ Training Dataset", data=f, file_name="emails.csv", mime="text/csv")
+        url = "https://drive.google.com/uc?id=1F83aqitmnNcWqfX__CbMgKCDq71IQ6iP"
+        st.markdown(f"[⬇️ Training Dataset]({url})")
     with col2:
         with open("X_test.csv", "rb") as f:
             st.download_button("⬇️ Test Dataset", data=f, file_name="X_test.csv", mime="text/csv")
@@ -154,8 +154,8 @@ elif page == "ℹ️ About":
     st.write("**Houssem Taoujouti**")
 elif page == "📊 Dataset Statistics":
     st.header("📊 Dataset Statistics")
-    df = pd.read_csv("emails.csv")
-
+    url = "https://drive.google.com/uc?id=1F83aqitmnNcWqfX__CbMgKCDq71IQ6iP"
+    df = pd.read_csv(url)
     # Ligne 1 : Pie chart centré
     st.subheader("📊 Spam vs Not Spam Distribution")
     spam_counts = df["Prediction"].value_counts()
