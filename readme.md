@@ -3,7 +3,7 @@
 A Machine Learning web app that detects whether an email is spam or not using XGBoost.
 
 ## 🚀 Live Demo
-[Click here to try the app](https://houssemtaoujouti-email-spam-detector.streamlit.app)
+[Click here to try the app](https://email-spam-detector-ht.streamlit.app/)
 
 ## 📌 Features
 - ✉️ **Email Checker** — Paste an email and get an instant spam prediction with confidence score
